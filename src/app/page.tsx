@@ -48,8 +48,8 @@ export default function LandingPage() {
           ]}
           slides={[
             { imageSrc: "http://img.b2bpic.net/free-photo/wicker-gray-table-with-glass-gray-chairs_140725-3025.jpg", imageAlt: "Elegant fine dining restaurant interior" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/modern-restaurant-kitchen-with-wood-fired-oven_23-2151949233.jpg", imageAlt: "Professional chef in gourmet kitchen" },
-            { imageSrc: "http://img.b2bpic.net/free-vector/lovely-restaurant-composition_23-2147913198.jpg", imageAlt: "Restaurant storefront entrance" }
+            { imageSrc: "http://img.b2bpic.net/free-photo/modern-restaurant-kitchen-with-wood-fired-oven_23-2151949233.jpg?_wi=1", imageAlt: "Professional chef in gourmet kitchen" },
+            { imageSrc: "http://img.b2bpic.net/free-vector/lovely-restaurant-composition_23-2147913198.jpg?_wi=1", imageAlt: "Restaurant storefront entrance" }
           ]}
           autoplayDelay={5000}
           showDimOverlay={true}
@@ -61,7 +61,7 @@ export default function LandingPage() {
           title="Culinary Excellence Redefined"
           description="At Artisan Table, we blend traditional techniques with innovative flavors. Our award-winning chefs source the finest ingredients to create memorable dining experiences that celebrate the art of gastronomy."
           tag="Our Story"
-          imageSrc="http://img.b2bpic.net/free-photo/modern-restaurant-kitchen-with-wood-fired-oven_23-2151949233.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/modern-restaurant-kitchen-with-wood-fired-oven_23-2151949233.jpg?_wi=2"
           imageAlt="Chef preparing gourmet cuisine"
           buttons={[{ text: "Learn Our Craft", href: "#" }]}
           useInvertedBackground={false}
@@ -119,7 +119,7 @@ export default function LandingPage() {
             { name: "time", type: "time", placeholder: "Preferred Time", required: true }
           ]}
           textarea={{ name: "message", placeholder: "Special requests or dietary preferences...", rows: 4, required: false }}
-          imageSrc="http://img.b2bpic.net/free-vector/lovely-restaurant-composition_23-2147913198.jpg"
+          imageSrc="http://img.b2bpic.net/free-vector/lovely-restaurant-composition_23-2147913198.jpg?_wi=2"
           imageAlt="Restaurant entrance"
           mediaAnimation="slide-up"
           mediaPosition="right"
