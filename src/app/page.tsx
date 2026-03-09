@@ -8,6 +8,7 @@ import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
+import { MapPin, Phone, Clock } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -109,24 +110,58 @@ export default function LandingPage() {
       </div>
 
       <div id="contact" data-section="contact">
-        <ContactSplitForm
-          title="Reserve Your Culinary Experience"
-          description="Book your table at Artisan Table. Our team looks forward to welcoming you for an exceptional evening of fine dining."
-          inputs={[
-            { name: "name", type: "text", placeholder: "Your Name", required: true },
-            { name: "email", type: "email", placeholder: "Your Email", required: true },
-            { name: "date", type: "date", placeholder: "Preferred Date", required: true },
-            { name: "time", type: "time", placeholder: "Preferred Time", required: true }
-          ]}
-          textarea={{ name: "message", placeholder: "Special requests or dietary preferences...", rows: 4, required: false }}
-          imageSrc="http://img.b2bpic.net/free-vector/lovely-restaurant-composition_23-2147913198.jpg?_wi=2"
-          imageAlt="Restaurant entrance"
-          mediaAnimation="slide-up"
-          mediaPosition="right"
-          buttonText="Reserve Table"
-          useInvertedBackground={false}
-          onSubmit={(data) => console.log("Reservation form submitted:", data)}
-        />
+        <div className="space-y-12">
+          <ContactSplitForm
+            title="Reserve Your Culinary Experience"
+            description="Book your table at Artisan Table. Our team looks forward to welcoming you for an exceptional evening of fine dining."
+            inputs={[
+              { name: "name", type: "text", placeholder: "Your Name", required: true },
+              { name: "email", type: "email", placeholder: "Your Email", required: true },
+              { name: "date", type: "date", placeholder: "Preferred Date", required: true },
+              { name: "time", type: "time", placeholder: "Preferred Time", required: true }
+            ]}
+            textarea={{ name: "message", placeholder: "Special requests or dietary preferences...", rows: 4, required: false }}
+            imageSrc="http://img.b2bpic.net/free-vector/lovely-restaurant-composition_23-2147913198.jpg?_wi=2"
+            imageAlt="Restaurant entrance"
+            mediaAnimation="slide-up"
+            mediaPosition="right"
+            buttonText="Reserve Table"
+            useInvertedBackground={false}
+            onSubmit={(data) => console.log("Reservation form submitted:", data)}
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-0">
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="p-4 bg-amber-700 rounded-lg">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-amber-900 mb-2">Location</h3>
+                <p className="text-amber-800">1247 Culinary Lane<br />Gourmet District<br />New York, NY 10001</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="p-4 bg-amber-700 rounded-lg">
+                <Phone className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-amber-900 mb-2">Phone</h3>
+                <p className="text-amber-800"><a href="tel:+1-555-123-4567" className="hover:underline">+1 (555) 123-4567</a></p>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="p-4 bg-amber-700 rounded-lg">
+                <Clock className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-amber-900 mb-2">Hours</h3>
+                <p className="text-amber-800">Tue - Thu: 5:00 PM - 11:00 PM<br />Fri - Sat: 5:00 PM - 12:00 AM<br />Sunday: 5:00 PM - 10:00 PM<br />Monday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="footer" data-section="footer">
